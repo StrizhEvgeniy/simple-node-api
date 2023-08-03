@@ -1,6 +1,17 @@
-# A Simple Nodejs API
+# Getting Started
 
-## Running the Application
+В этом репозитории уже прописан докерфайл, для создания образа нужно запустить команду
 
-1. Run `npm install`
-2. Run `node server`
+```
+docker build -t simple-node-api .
+```
+
+Для запуска контейнера необходимо выполнить следующую команду
+
+```
+docker run -p 8080:8080 simple-node-api
+```
+
+После чего бэкенд часть приложения откроется на 8080 порту по [ссылке](http://localhost:8080/)
+
+Для корректной работы приложения необходимо загрузить и запустить фронтенд часть из этого [репозитория](https://github.com/StrizhEvgeniy/Moderation_queue)
